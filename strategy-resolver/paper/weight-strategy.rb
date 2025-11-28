@@ -5,7 +5,7 @@ class PaperWeightStrategy < BaseStrategy
     context.condition_alpha == "paper" && context.condition_beta == "paper_weight"
   end
 
-  def initialize(input, weight_type:)
+  def initialize(input:, weight_type:)
     super(input:)
     @weight_type = weight_type
   end

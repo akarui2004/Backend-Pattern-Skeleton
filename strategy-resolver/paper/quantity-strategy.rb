@@ -5,13 +5,13 @@ class PaperQuantityStrategy < BaseStrategy
     context.condition_alpha == "paper" && context.condition_beta == "paper_quantity"
   end
 
-  def initialize(input, paper_quantity_type:)
+  def initialize(input:, paper_quantity_type:)
     super(input:)
     @paper_quantity_type = paper_quantity_type
   end
 
   def execute
-    puts "Executing paper quantity strategy with quantity type: #{quantity_type}"
+    puts "Executing paper quantity strategy with quantity type: #{paper_quantity_type}"
     build_result
   end
 

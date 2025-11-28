@@ -5,7 +5,7 @@ class QuantityStrategy < BaseStrategy
     context.condition_alpha == "paper" && context.condition_beta == "quantity"
   end
 
-  def initialize(input, quantity_type:)
+  def initialize(input:, quantity_type:)
     super(input:)
     @quantity_type = quantity_type
   end
